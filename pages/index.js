@@ -9,8 +9,15 @@ const home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="flex justify-center text-6xl pt-9">Uh oh! This is a dead place!</div>
-        <div className="flex justify-center text-4xl p-9">Go to <Link className="px-4 text-bold text-sky-500 hover:underline" href="/distantsynths">@distantsynths</Link></div>
+        <h1 className="flex justify-center text-6xl pt-9">
+          Uh oh! This is a dead place!
+        </h1>
+        <h1 className="flex justify-center text-4xl p-9">
+          Go to{" "}
+          <Link href="/distantsynths">
+            <a className="px-4 text-bold text-sky-500 hover:underline">@distantsynths</a>
+          </Link>
+        </h1>
       </main>
     </div>
   );

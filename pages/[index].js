@@ -44,7 +44,10 @@ export default function Home(){
       <main>
         <div className="flex flex-col justify-center place-items-center h-auto">
           <div className="w-1/2">
-            <h1 className="flex p-9 text-7xl font-bold">Hello, {userInfo.screen_name}.</h1>
+            <div class="flex flex-row h-auto">
+                <h1 className="flex p-9 text-7xl font-bold">Hello, <a className="hover:text-sky-500 hover:underline" href={"https://twitter.com/" + userInfo.screen_name}>@{userInfo.screen_name}</a>.</h1>
+                <img className="align-middle h-full w-auto my-auto mx-px"src={userInfo.profile_image_url}></img>
+            </div>
             <h2 className="flex pl-9 text-xl font-extralight">{userInfo.description}</h2>
             {userInfo.entities.url ? <h2 className="flex pl-9 text-xl font-extralight text-sky-500 hover:underline"><a href={userInfo.entities.url.urls[0].expanded_url}>{userInfo.entities.url.urls[0].expanded_url}</a></h2> : null}
           </div>

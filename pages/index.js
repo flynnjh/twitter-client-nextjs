@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const home = () => {
   return (
@@ -8,8 +9,8 @@ const home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="flex justify-center text-6xl pt-9">Uh oh! You've happened upon a dead place!</div>
-        <div className="flex justify-center text-4xl p-9">Go to <a className="px-4 text-bold text-sky-500 hover:underline" href="/distantsynths">@distantsynths</a></div>
+        <div className="flex justify-center text-6xl pt-9">Uh oh! This is a dead place!</div>
+        <div className="flex justify-center text-4xl p-9">Go to <Link className="px-4 text-bold text-sky-500 hover:underline" href="/distantsynths">@distantsynths</Link></div>
       </main>
     </div>
   );

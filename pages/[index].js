@@ -42,10 +42,12 @@ export default function Home(){
       </Head>
 
       <main>
-        <div className="flex flex-col">
-          <h1 className="flex p-9 text-7xl font-bold">Hello, {userInfo.screen_name}.</h1>
-          <h2 className="flex pl-9 text-xl font-extralight">{userInfo.description}</h2>
-          {userInfo.entities.url ? <h2 className="flex pl-9 text-xl font-extralight text-sky-500 hover:underline"><a href={userInfo.entities.url.urls[0].expanded_url}>{userInfo.entities.url.urls[0].expanded_url}</a></h2> : null}
+        <div className="flex flex-col justify-center place-items-center h-auto">
+          <div className="w-1/2">
+            <h1 className="flex p-9 text-7xl font-bold">Hello, {userInfo.screen_name}.</h1>
+            <h2 className="flex pl-9 text-xl font-extralight">{userInfo.description}</h2>
+            {userInfo.entities.url ? <h2 className="flex pl-9 text-xl font-extralight text-sky-500 hover:underline"><a href={userInfo.entities.url.urls[0].expanded_url}>{userInfo.entities.url.urls[0].expanded_url}</a></h2> : null}
+          </div>
         </div>
       </main>
     </div>

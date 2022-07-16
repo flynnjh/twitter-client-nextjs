@@ -15,6 +15,7 @@ export default async function handler(req, res) {
     
     const userTweets = await twitterClient.tweets.statusesUserTimeline({
     screen_name: req.query.user,
+    trim_user: true,
     include_rts: false,
     count: 3200,
     });

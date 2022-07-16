@@ -8,10 +8,11 @@ const twitterClient = new TwitterClient({
 });
 
 export default async function handler(req, res) {
+  console.log(req.query);
 
-    console.log(req.query);
-    
-    const userInfo = await twitterClient.accountsAndUsers.usersShow({ screen_name: req.query.user });
+  const userInfo = await twitterClient.accountsAndUsers.usersShow({
+    screen_name: req.query.user,
+  });
 
   res.status(200).json({ userInfo });
 }

@@ -3,7 +3,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-import Profile from "../components/profile";
+import Profile from "../components/userInfo";
+import Tweets from "../components/userTweets";
 
 export default function Home() {
   const [userInfo, setUserInfo] = useState();
@@ -65,6 +66,7 @@ export default function Home() {
 
       <main>
         <Profile userInfo={userInfo} userProfileImage={userProfileImage}/>
+        <Tweets userInfo={userInfo}/>
       </main>
     </div>
   );

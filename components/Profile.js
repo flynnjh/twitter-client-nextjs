@@ -24,7 +24,7 @@ const profile = ({userInfo, userProfileImage}) => {
                 </a>
               </h2>
             ) : null}
-            <div className="flex flex-row px-9 py-3">
+            <div className="flex flex-row px-9 py-3 text-xl">
               <a className="transition duration-150 hover:underline">
                 {userInfo.friends_count ? <h5 className="font-extralight pr-4">
                   <strong className="font-bold pr-1">{userInfo.friends_count}</strong>

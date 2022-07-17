@@ -8,7 +8,7 @@ const userTweets = ({userInfo}) => {
                 {userInfo.status ? <h1 className="text-sm pt-1 font-extralight">
                     Only the most recent @{userInfo.screen_name} tweet is shown here, to keep you focused.
                 </h1> : <h1 className="flex text-4xl pt-1 font-extralight">
-                    @{userInfo.screen_name} hasn't tweeted.
+                    @{userInfo.screen_name + " hasn't tweeted."}
                 </h1>}
                 {userInfo.status ? <h1 className="text-xl pt-9 text-sky-500 hover:underline">
                     <a href={"https://twitter.com/i/status/" + userInfo.status.id_str}>

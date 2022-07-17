@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import {useState, useEffect} from "react";
 
 
-const home = () => {
+const Home = () => {
 
   
   const handleKeyPress = (e) => {
@@ -97,4 +97,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

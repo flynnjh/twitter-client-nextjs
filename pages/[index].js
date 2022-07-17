@@ -3,8 +3,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-import Profile from "../components/userInfo";
-import Tweets from "../components/userTweets";
+import Profile from "../components/Profile";
+import Tweets from "../components/Tweets";
 
 export default function Home() {
   const [userInfo, setUserInfo] = useState();

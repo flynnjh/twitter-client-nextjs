@@ -11,7 +11,7 @@ const userTweets = ({userInfo}) => {
                     @{userInfo.screen_name} hasn't tweeted.
                 </h1>}
                 {userInfo.status ? <h1 className="text-xl pt-9 text-sky-500 hover:underline">
-                    <a href={"https://nitter.42l.fr/i/status/" + userInfo.status.id_str}>
+                    <a href={"https://twitter.com/i/status/" + userInfo.status.id_str}>
                         <li>
                             {userInfo.status.text}
                         </li>
